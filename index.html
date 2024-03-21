@@ -41,10 +41,10 @@
             <div class="sub-section">
                 <strong>Tipo de teste</strong>
                 <div class="button-dev">
-                    <div class="button-emoji">
+                    <div class="button-emoji" onclick="showOriginalOptions()">
                         <p>front-end</p><img src="./assets/smiley.svg" alt="">
                     </div>
-                    <div class="button-emoji sad">
+                    <div class="button-emoji sad" onclick="showNewOptions()">
                         <p>back-end</p><img src="./assets/smileysad.svg" alt="">
                     </div>
                 </div>
@@ -54,14 +54,8 @@
             <div class="container-menu">
                 <div class="menu">
                     <div class="arrow-left"><img src="./assets/arrow-left.svg" alt=""></div>
-                    <ul class="menu-icons">
-                        <li><img class="button-menu" src="./assets/sass.svg" alt="" data-tech="Sass"></li>
-                        <li><img class="button-menu" src="./assets/vue-logo.svg" alt="" data-tech="Vue.js"></li>
-                        <li><img class="button-menu" src="./assets/typescript.svg" alt="" data-tech="TypeScript"></li>
-                        <li><img class="button-menu" src="./assets/github.svg" alt="" data-tech="GitHub"></li>
-                        <li><img class="button-menu" src="./assets/html.svg" alt="" data-tech="HTML"></li>
-                        <li><img class="button-menu" src="./assets/js.svg" alt="" data-tech="JavaScript"></li>
-                        <li><img class="button-menu" src="./assets/css.svg" alt="" data-tech="CSS"></li>
+                    <ul class="menu-icons" id="menuCarrosel">
+
                     </ul>
                     <div class="arrow-right"><img src="./assets/arrow-right.svg" alt=""></div>
                 </div>
@@ -69,15 +63,10 @@
             <div class="card-tech">
                 <strong class="title-card">Sass</strong>
                 <div class="text-card">
-                    <p>Lorem ipsum dolor sit amet consectetur. Est ac tristique congue at nunc. Urna ullamcorper tortor
-                        blandit at interdum eget. Ut ipsum ut dolor dolor diam in. Pharetra sit ultrices vitae turpis
-                        augue tempor.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur. Est ac tristique congue at nunc. Urna ullamcorper tortor
-                        blandit at interdum eget. Ut ipsum ut dolor dolor diam in. Pharetra sit ultrices vitae turpis
-                        augue tempor.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur. Est ac tristique congue at nunc. Urna ullamcorper tortor
-                        blandit at interdum eget. Ut ipsum ut dolor dolor diam in. Pharetra sit ultrices vitae turpis
-                        augue tempor.</p>
+                    <p id="text-alvo">Sass é uma linguagem de folhas de estilo concebida inicialmente por Hampton Catlin
+                        e desenvolvida por Natalie Weizenbaum. Depois de suas versões iniciais, Weizenbaum e Chris
+                        Eppstein continuaram a estender Sass com SassScript, uma simples linguagem de script usada em
+                        arquivos Sass.</p>
                 </div>
             </div>
             <div class="card-container">
