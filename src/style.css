@@ -172,7 +172,7 @@ h1 {
 .more-about {
     width: 284px;
     height: 90px;
-    padding: 0.3rem;
+    padding: 1rem;
     border-radius: 18px;
     background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(20px);
