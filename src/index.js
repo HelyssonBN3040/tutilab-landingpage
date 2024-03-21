@@ -23,3 +23,17 @@ document.addEventListener("DOMContentLoaded", function() {
         menuIcons.scrollBy({ left: -100, behavior: 'smooth' }); // Ajuste o valor de -100 conforme necessário
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const menuIcons = document.querySelectorAll('.button-menu');
+    const titleCard = document.querySelector('.title-card');
+
+    // Adiciona um ouvinte de evento de clique a cada ícone
+    menuIcons.forEach(icon => {
+        icon.addEventListener('click', () => {
+            // Obtém o texto do atributo 'data-tech' do ícone clicado
+            const tech = icon.getAttribute('data-tech');
+            // Atualiza o conteúdo da tag <strong> com o texto obtido
+            titleCard.textContent = tech;
+        });
+    });
+});
