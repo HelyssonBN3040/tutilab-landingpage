@@ -182,11 +182,6 @@ h1 {
     color: #424242;
 }
 
-.more-about {
-    text-align: center;
-    /* Adicione estilos adicionais aqui */
-}
-
 .more-about a p {
     color: #FFFFFF;
     text-decoration: none;
@@ -198,7 +193,7 @@ h1 {
 
 .card-more {
     position: absolute;
-    top: -13px;
+    top: -10px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -230,11 +225,7 @@ h1 {
         flex-direction: column;
         align-items: center;
     }
-    .section-3{
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
+    
 
     .header-container, .img-container {
         max-width: 100%;
@@ -252,6 +243,9 @@ h1 {
     .card-tech, .card-more {
         width: 90%; /* Ajusta a largura dos cards para melhor visualização */
     }
+    .card-more{
+        top: 15rem;
+    }
 }
 
 /* Smartphones e abaixo */
@@ -260,14 +254,19 @@ h1 {
         width: 100%;
         height: 164px;
     }
-
-    .more-about {
-        width: auto; /* Permite que o contêiner .more-about se ajuste ao conteúdo */
-        margin: 0 20px; /* Adiciona um pouco de espaço nas laterais */
+    .card-container .card-cell{
+        width: 100%;
     }
 
     h1 {
         font-size: 48px; /* Reduz o tamanho da fonte do título para melhor ajuste */
+    }
+    .section-3{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .more-about{
+        width: 358px;
     }
 }
 
