@@ -83,6 +83,7 @@ h1 {
 
 .text-section-1 {
     text-align: justify;
+    font-size: 11px;
 
 }
 
@@ -127,19 +128,48 @@ h1 {
     color: black;
 }
 
-.menu,
-.menu-icons {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    gap: 1rem;
-}
 
 .section-3 {
     width: 100%;
     display: flex;
+    gap: 1rem;
     justify-content: space-between;
 }
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajuste para posicionar as setas corretamente */
+    background-color: #D9D9D9;
+    overflow: hidden;
+    width:605px; /* Adicionado para ocultar o overflow */
+    padding: 1rem; /* Adiciona um pouco de espaço interno */
+    border-radius: 68px;
+
+}
+
+.menu-icons {
+    display: flex;
+    justify-content: flex-start; /* Ajuste para alinhamento */
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+    overflow-x: auto; /* Habilita o scroll horizontal */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    width: 100%; /* Define uma largura específica */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.menu-icons::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem no Chrome, Safari e Opera */
+}
+
+.arrow-left, .arrow-right {
+    cursor: pointer; /* Muda o cursor para indicar ação */
+}
+
+/* Estilize as setas conforme necessário */
 
 .card-tech {
     border: 1px solid black;
@@ -172,7 +202,7 @@ h1 {
 .more-about {
     width: 284px;
     height: 90px;
-    padding: 1rem;
+    padding: 0.1rem;
     border-radius: 18px;
     background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(20px);
@@ -202,7 +232,7 @@ h1 {
     justify-content: center;
 }
 
-.arrow-right {
+.arrow-right-button {
     width: 18px;
 }
 
@@ -225,7 +255,10 @@ h1 {
         flex-direction: column;
         align-items: center;
     }
-    
+    .section-3{
+        flex-direction: column;
+
+    }
 
     .header-container, .img-container {
         max-width: 100%;
@@ -235,10 +268,9 @@ h1 {
         width: 100%; /* Faz a imagem se ajustar ao contêiner */
     }
 
-    .menu, .menu-icons {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+   .menu{
+    width: 100%;
+   }
 
     .card-tech, .card-more {
         width: 90%; /* Ajusta a largura dos cards para melhor visualização */
@@ -262,7 +294,6 @@ h1 {
         font-size: 48px; /* Reduz o tamanho da fonte do título para melhor ajuste */
     }
     .section-3{
-        flex-direction: column;
         gap: 1rem;
     }
     .more-about{
@@ -270,4 +301,3 @@ h1 {
     }
 }
 
-/* Ajustes adicionais para melhorar a responsividade */
