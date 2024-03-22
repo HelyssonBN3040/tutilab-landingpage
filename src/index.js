@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('load', function () {
         updateArrowVisibility();
     });
-    
+
     menuIcons.addEventListener('scroll', updateArrowVisibility);
 
     arrowRight.addEventListener('click', () => {
@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 });
-
 
 //FrontEnd
 const TextSass = "Sass é uma linguagem de folhas de estilo concebida inicialmente por Hampton Catlin e desenvolvida por Natalie Weizenbaum. Depois de suas versões iniciais, Weizenbaum e Chris Eppstein continuaram a estender Sass com SassScript, uma simples linguagem de script usada em arquivos Sass. "

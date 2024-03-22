@@ -5,7 +5,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-li{
+
+li {
     cursor: pointer;
 }
 
@@ -171,7 +172,7 @@ h1 {
 }
 
 .menu-icons::-webkit-scrollbar {
-    display:none;
+    display: none;
 }
 
 .arrow-left,
@@ -247,7 +248,8 @@ h1 {
 .arrow-right-button {
     width: 18px;
 }
-.container-button{
+
+.container-button {
     display: flex;
     justify-content: flex-end;
     align-content: baseline;
@@ -321,5 +323,5 @@ h1 {
         gap: 1rem;
     }
 
-   
+
 }
