@@ -165,7 +165,7 @@ h1 {
     list-style-type: none;
     overflow-x: auto;
     padding: 0;
-    margin: 0;
+    margin: 0 10px;
     width: 100%;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -178,7 +178,6 @@ h1 {
 .arrow-left,
 .arrow-right {
     cursor: pointer;
-    padding: 0 0.7rem;
 }
 
 

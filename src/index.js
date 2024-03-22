@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
     menuIcons.addEventListener('scroll', updateArrowVisibility);
 
     arrowRight.addEventListener('click', () => {
-        menuIcons.scrollBy({ left: 100, behavior: 'smooth' });
+        menuIcons.scrollBy({ left: 120, behavior: 'smooth' });
     });
 
     arrowLeft.addEventListener('click', () => {
-        menuIcons.scrollBy({ left: -100, behavior: 'smooth' });
+        menuIcons.scrollBy({ left: -120, behavior: 'smooth' });
     });
 
 
