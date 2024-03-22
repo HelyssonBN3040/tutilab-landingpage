@@ -178,6 +178,7 @@ h1 {
 .arrow-left,
 .arrow-right {
     cursor: pointer;
+    padding: 0 0.7rem;
 }
 
 
