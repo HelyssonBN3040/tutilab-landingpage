@@ -5,25 +5,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateArrowVisibility() {
         const isAtEnd = menuIcons.scrollWidth - Math.floor(menuIcons.scrollLeft) <= menuIcons.clientWidth;
-        const isAtStart = menuIcons.scrollLeft === 0;
+        const isAtStart = menuIcons.scrollLeft <= 0;
 
-        arrowRight.style.display = isAtEnd ? 'inherit' : '';
+        arrowRight.style.display = isAtEnd ? 'none' : '';
         arrowLeft.style.display = isAtStart ? 'none' : '';
     }
-
+    window.addEventListener('load', function () {
+        updateArrowVisibility();
+    });
+    
     menuIcons.addEventListener('scroll', updateArrowVisibility);
 
-    updateArrowVisibility();
-
     arrowRight.addEventListener('click', () => {
-        menuIcons.scrollBy({ left: 120, behavior: 'smooth' });
+        menuIcons.scrollBy({ left: 100, behavior: 'smooth' });
     });
 
     arrowLeft.addEventListener('click', () => {
-        menuIcons.scrollBy({ left: -120, behavior: 'smooth' });
+        menuIcons.scrollBy({ left: -100, behavior: 'smooth' });
     });
 
-    updateArrowVisibility();
+
 });
 
 
@@ -50,6 +51,7 @@ const TitleGithub = "Github"
 const TitleHtml = "Html"
 const TitleJs = "JavaScript"
 const TitleCss = "CSS"
+
 //Titulos BacktEnd
 const TitleNode = "NodeJs"
 const TitleNest = "NestJs"
@@ -90,5 +92,4 @@ function changeText(texto, titulo) {
 
 }
 
-// Exibir opções originais por padrão
 showOriginalOptions();

@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+li{
+    cursor: pointer;
+}
 
 body {
     background-color: #ffffff;
@@ -88,7 +91,7 @@ h1 {
 }
 
 .img-container img {
-    width: 60rem;
+    width: auto;
 }
 
 .sub-section {
@@ -128,7 +131,8 @@ h1 {
     background-color: white;
     color: black;
 }
-.section-2{
+
+.section-2 {
     margin-top: 0rem;
 }
 
@@ -139,41 +143,42 @@ h1 {
     gap: 1rem;
     justify-content: space-between;
 }
+
 .menu {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ajuste para posicionar as setas corretamente */
+    justify-content: space-between;
     background-color: #D9D9D9;
     overflow: hidden;
-    width:605px; /* Adicionado para ocultar o overflow */
-    padding: 1rem; /* Adiciona um pouco de espaço interno */
+    width: 605px;
+    padding: 1rem;
     border-radius: 68px;
 
 }
 
 .menu-icons {
     display: flex;
-    justify-content: flex-start; /* Ajuste para alinhamento */
+    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
     list-style-type: none;
-    overflow-x: auto; /* Habilita o scroll horizontal */
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
-    width: 100%; /* Define uma largura específica */
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    overflow-x: auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .menu-icons::-webkit-scrollbar {
-    display: none; /* Oculta a barra de rolagem no Chrome, Safari e Opera */
+    display:none;
 }
 
-.arrow-left, .arrow-right {
-    cursor: pointer; /* Muda o cursor para indicar ação */
+.arrow-left,
+.arrow-right {
+    cursor: pointer;
 }
 
-/* Estilize as setas conforme necessário */
 
 .card-tech {
     border: 1px solid black;
@@ -204,9 +209,10 @@ h1 {
 }
 
 .more-about {
-    width: 284px;
+    width: 100%;
     height: 90px;
-    padding: 0.1rem;
+    margin: 0 1rem;
+    padding: 9px;
     border-radius: 18px;
     background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(20px);
@@ -214,7 +220,9 @@ h1 {
 
 .more-about p {
     color: #424242;
+    font-size: 16px;
 }
+
 
 .more-about a p {
     color: #FFFFFF;
@@ -227,7 +235,7 @@ h1 {
 
 .card-more {
     position: absolute;
-    top: -10px;
+    top: -25px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -239,6 +247,11 @@ h1 {
 .arrow-right-button {
     width: 18px;
 }
+.container-button{
+    display: flex;
+    justify-content: flex-end;
+    align-content: baseline;
+}
 
 .button-more {
     display: flex;
@@ -247,61 +260,66 @@ h1 {
     align-items: center;
     width: 112px;
     height: 30px;
-    background-color:#4C577D;
+    background-color: #4C577D;
     font-size: 12px;
     border-radius: 20px;
 
 }
 
-/* Tablets e abaixo */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .section-1 {
         flex-direction: column;
         align-items: center;
     }
-    .section-3{
+
+    .section-3 {
         flex-direction: column;
 
     }
 
-    .header-container, .img-container {
+    .header-container,
+    .img-container {
         max-width: 100%;
     }
 
     .img-container img {
-        width: 100%; /* Faz a imagem se ajustar ao contêiner */
+        width: 100%;
     }
 
-   .menu{
-    width: 100%;
-   }
+    .menu {
+        width: 100%;
+    }
 
-    .card-tech, .card-more {
-        width: 90%; /* Ajusta a largura dos cards para melhor visualização */
+    .card-tech {
+        width: 100%;
+        height: 164px;
     }
-    .card-more{
-        top: 15rem;
+
+    .card-container .card-cell {
+        width: 100%;
     }
+
+
 }
 
 /* Smartphones e abaixo */
 @media (max-width: 480px) {
-    .card-tech, .card-more {
+    .card-tech {
         width: 100%;
         height: 164px;
     }
-    .card-container .card-cell{
+
+    .card-container .card-cell {
         width: 100%;
     }
 
     h1 {
-        font-size: 48px; /* Reduz o tamanho da fonte do título para melhor ajuste */
+        font-size: 48px;
     }
-    .section-3{
+
+    .section-3 {
         gap: 1rem;
     }
-    .more-about{
-        width: 358px;
-    }
-}
 
+   
+}
